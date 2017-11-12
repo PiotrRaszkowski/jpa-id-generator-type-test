@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Resources>
+	<Resource id="test-DS" type="DataSource">
+        JdbcDriver  com.mysql.jdbc.Driver
+        JdbcUrl jdbc:mysql://localhost:3366/test
+        UserName    test
+        Password test1234
+	</Resource>
+
+    <Resource id="test-MES" type="ManagedExecutorService">
+        Core = 8
+        Max = 25
+        KeepAlive = 5 s
+        Queue = 999999999
+        ThreadFactory = org.apache.openejb.threads.impl.ManagedThreadFactoryImpl
+        Lazy = true
+    </Resource>
+</Resources>
